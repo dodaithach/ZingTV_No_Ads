@@ -1753,7 +1753,7 @@
 
     .prologue
     .line 91
-    iget-boolean v0, p0, Lcom/vng/zingtv/activity/PlayerActivity;->j:Z
+    const/4 v0, 0x0
 
     return v0
 .end method
@@ -6206,6 +6206,15 @@
     .locals 6
 
     .prologue
+
+    # show toast
+    const-string v1, "NORMAL"
+    const/4 v2, 0x1
+    invoke-static {p0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v1
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+    # end showing toast
+
     const/4 v5, 0x1
 
     const/4 v4, 0x0

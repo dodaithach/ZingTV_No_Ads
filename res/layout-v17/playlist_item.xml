@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/root_loadolder" android:background="@drawable/selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="35.0dip" layout="@layout/loading_s" />
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_header" android:background="@drawable/main_border_bottom_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="@string/text_view_more" android:textAllCaps="false" android:textAlignment="center" style="@style/ZingTV.Widget.SecondaryText" />
+    </FrameLayout>
+    <FrameLayout android:background="@drawable/selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:id="@id/root" android:background="@drawable/selector" android:padding="4.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="@dimen/img_video_width" android:layout_height="@dimen/img_video_height">
+                <com.vng.zingtv.views.ZImageView android:id="@id/img_thumbnail" android:layout_width="@dimen/img_video_width" android:layout_height="@dimen/img_video_height" />
+                <FrameLayout android:layout_gravity="bottom" android:id="@id/frViewPlaying" android:background="#80000000" android:layout_width="@dimen/img_video_width" android:layout_height="30.0dip" android:layout_alignParentBottom="true">
+                    <TextView android:textColor="@color/pure_white" android:layout_gravity="center" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/now_playing" />
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" android:layout_toRightOf="@id/frViewPlaying" style="@style/ZingTV.Widget.TitleText" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

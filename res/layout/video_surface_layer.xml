@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.exoplayer.AspectRatioFrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.vng.zingtv.playercontrol.views.AdPlayerView android:id="@id/ad_player_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.google.android.exoplayer.AspectRatioFrameLayout>
+</FrameLayout>

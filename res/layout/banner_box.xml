@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/home_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.vng.zingtv.views.CirclePageIndicator android:id="@id/home_indicator" android:background="@drawable/page_banner_indicator" android:paddingLeft="@dimen/margin_menu" android:paddingTop="@dimen/list_margin" android:paddingRight="@dimen/margin_menu" android:paddingBottom="@dimen/list_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minWidth="120.0dip" android:layout_above="@id/genreGrid" app:fillColor="#ff84b82a" app:pageColor="#ffffffff" app:radius="4.0dip" app:strokeColor="#ffffffff" app:strokeWidth="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/genreGrid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/home_pager">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <include android:id="@id/firstLineOne" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/cateitem_onbannber" />
+            <include android:id="@id/firstLineSecound" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/cateitem_onbannber" />
+            <include android:id="@id/firstLineThird" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/cateitem_onbannber" />
+            <include android:id="@id/firstLineFour" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/cateitem_onbannber" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <include android:id="@id/secondLineOne" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/cateitem_onbannber" />
+            <include android:id="@id/secondLineSecond" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/cateitem_onbannber" />
+            <include android:id="@id/secondLineThird" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/cateitem_onbannber" />
+            <include android:id="@id/secondLineFour" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/cateitem_onbannber" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

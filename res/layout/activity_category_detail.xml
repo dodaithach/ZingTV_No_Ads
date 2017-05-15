@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cast_mini_controller" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/toolbar_withmode" />
+            <android.support.design.widget.TabLayout android:id="@id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabMode="fixed" app:tabGravity="fill" style="@style/ZingTV.Widget.TabLayout" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@id/viewpager_cate_detail" android:background="@color/pure_white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/fl_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:layout_gravity="center" android:id="@id/vs_error" android:layout="@layout/error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <fragment android:id="@id/cast_mini_controller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:castShowImageThumbnail="true" class="com.vng.zingtv.fragment.ZTVMiniControllerFragment" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

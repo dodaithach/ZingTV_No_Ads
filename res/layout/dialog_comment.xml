@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white_f7f7f7" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_comment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/default_avatar_shape" />
+        <EditText android:scrollbarSize="5.0dip" android:scrollbarThumbVertical="@color/black_with_alpha_30" android:textColorHint="@color/gray_88888b" android:id="@id/et_comment" android:background="@color/transparent" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:hint="@string/comment" android:cursorVisible="true" android:maxLines="5" android:layout_toLeftOf="@id/img_send" android:layout_toRightOf="@id/img_avatar" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone" android:textCursorDrawable="@null" style="@style/ZingTV.Widget.SecondaryText" />
+        <ImageView android:id="@id/img_send" android:background="@drawable/selector" android:padding="10.0dip" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_send" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/dialog_text" android:layout_gravity="right" android:id="@id/tv_count" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_below="@id/rl_comment" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/media_route_menu_item" android:title="@string/media_route_menu_title" app:showAsAction="always" app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider" />
+    <item android:icon="@drawable/ico_menu_share_white" android:id="@id/menu_share" android:title="@string/share" app:showAsAction="always" />
+    <item android:icon="@drawable/ico_menu_overflow_white" android:id="@id/menu_overflow" android:title="@string/more" app:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/ico_star_black" android:id="@id/menu_rate" android:title="@string/rating" app:showAsAction="always" />
+            <item android:icon="@drawable/ico_bug" android:id="@id/menu_bug" android:title="@string/bug" app:showAsAction="always" />
+            <item android:icon="@drawable/ico_copyright" android:id="@id/menu_report" android:title="@string/report" app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>

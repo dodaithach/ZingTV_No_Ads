@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_layout_root" android:background="@color/main_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_layout" />
+    <ViewStub android:layout_gravity="center" android:id="@id/vs_error" android:layout="@layout/error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/toolbar_withmode" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view_program_more" android:paddingTop="5.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/app_bar" />
+</RelativeLayout>

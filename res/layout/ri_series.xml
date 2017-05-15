@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_cover" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="centerCrop" />
+    <TextView android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/tv_title" android:background="@drawable/program_series_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Vietsub (20 video)" android:maxLines="2" android:drawableLeft="@drawable/ico_live_streaming" android:drawablePadding="8.0dip" android:layout_below="@id/img_cover" style="@style/ZingTV.Widget.SecondaryText" />
+</RelativeLayout>

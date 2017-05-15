@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container_all" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/container_current" android:background="#ff747480" android:layout_width="fill_parent" android:layout_height="78.0dip">
+        <FrameLayout android:id="@id/containerImage" android:padding="5.0dip" android:layout_width="120.0dip" android:layout_height="74.0dip" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center" android:id="@id/icon_view" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="74.0dip" android:scaleType="centerCrop" />
+            <TextView android:textSize="@dimen/third_text_size" android:textColor="@color/pure_white" android:gravity="center" android:id="@id/subtitle_view" android:background="#80000000" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="ChromeCast" android:maxLines="2" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/containerButtons" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/containerImage" android:layout_above="@id/progressBar">
+            <TextView android:textSize="@dimen/third_text_size" android:textColor="@color/pure_white" android:ellipsize="end" android:id="@id/title_view" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cuoc phieu luu cua Tom" android:maxLines="1" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/toolboxContainer" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="4.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/btnPrev30" android:background="@drawable/selector" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="25.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/btnPrev" android:background="@drawable/selector" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="25.0dip" android:layout_weight="1.0" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ProgressBar android:layout_gravity="center" android:id="@id/loadingCast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="30.0dip" android:maxHeight="30.0dip" android:indeterminate="true" android:minWidth="30.0dip" android:minHeight="30.0dip" style="@style/ProgressBarSmall" />
+                    <ImageView android:layout_gravity="center" android:id="@id/btnPlay" android:background="@drawable/selector" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+                </FrameLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/btnNext" android:background="@drawable/selector" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="25.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/btnNext30" android:background="@drawable/selector" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="25.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="5.0dip" android:progressDrawable="@drawable/cast_mini_controller_progress_drawable" android:layout_alignParentBottom="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </RelativeLayout>
+</LinearLayout>

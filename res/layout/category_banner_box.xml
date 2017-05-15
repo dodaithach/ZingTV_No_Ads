@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager android:id="@id/home_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.vng.zingtv.views.CirclePageIndicator android:layout_gravity="bottom|center|left" android:id="@id/home_indicator" android:background="@drawable/page_banner_indicator" android:paddingLeft="@dimen/margin_menu" android:paddingTop="@dimen/list_margin" android:paddingRight="@dimen/margin_menu" android:paddingBottom="@dimen/list_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minWidth="120.0dip" app:fillColor="#ff84b82a" app:pageColor="#ffffffff" app:radius="4.0dip" app:strokeColor="#ffffffff" app:strokeWidth="0.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/genreGrid" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/firstLineOne" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" layout="@layout/catetogoryitem_onbannber" />
+            <View android:id="@id/lineOneOne" android:background="@color/banner_grid" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <include android:id="@id/firstLineSecound" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" layout="@layout/catetogoryitem_onbannber" />
+            <View android:id="@id/lineOneSe" android:background="@color/banner_grid" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <include android:id="@id/firstLineThird" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" layout="@layout/catetogoryitem_onbannber" />
+            <View android:id="@id/lineOneRd" android:background="@color/banner_grid" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <include android:id="@id/firstLineFour" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" layout="@layout/catetogoryitem_onbannber" />
+        </LinearLayout>
+        <View android:id="@id/lineBetween" android:background="@color/banner_grid" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/secondLineOne" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" layout="@layout/catetogoryitem_onbannber" />
+            <View android:id="@id/lineTwoOne" android:background="@color/banner_grid" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <include android:id="@id/secondLineSecond" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" layout="@layout/catetogoryitem_onbannber" />
+            <View android:id="@id/lineTwoSe" android:background="@color/banner_grid" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <include android:id="@id/secondLineThird" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" layout="@layout/catetogoryitem_onbannber" />
+            <View android:id="@id/lineTwoRd" android:background="@color/banner_grid" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <include android:id="@id/secondLineFour" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" layout="@layout/catetogoryitem_onbannber" />
+        </LinearLayout>
+        <View android:id="@id/lineBottom" android:background="@color/banner_grid" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/selector" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="@dimen/img_video_width" android:layout_height="@dimen/img_video_height" android:layout_marginLeft="10.0dip" android:scaleType="centerCrop" />
+    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Hoa Thien Cot" android:maxLines="2" android:lineSpacingExtra="1.5dip" style="@style/ZingTV.Widget.SecondaryText" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@id/layoutPersonalRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@color/main_item_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/img_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/default_avatar_shape" android:layout_centerVertical="true" />
+                    <TextView android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" android:layout_toRightOf="@id/img_avatar" android:fontFamily="sans-serif-medium" style="@style/ZingTV.Widget.SecondaryText" />
+                    <TextView android:ellipsize="end" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:layout_below="@id/tv_name" android:layout_alignLeft="@id/tv_name" style="@style/ZingTV.Widget.ThirdText" />
+                    <TextView android:ellipsize="end" android:id="@id/tv_exp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:layout_below="@id/tv_type" android:layout_alignLeft="@id/tv_name" style="@style/ZingTV.Widget.ThirdText" />
+                    <ImageView android:id="@id/img_logout" android:background="@drawable/selector" android:paddingLeft="8.0dip" android:paddingRight="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="60.0dip" android:src="@drawable/ico_logout" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/personal_header_margin_top">
+                    <TextView android:gravity="center_vertical" android:id="@id/tv_history_header" android:background="@drawable/main_border_bottom_selector" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:text="@string/personal_history" android:drawablePadding="@dimen/main_title_margin_left" style="@style/TitleHeader" />
+                    <TextView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" style="@style/TitleMore" />
+                </FrameLayout>
+                <View android:background="@color/main_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <FrameLayout android:id="@id/history_view" android:background="@color/pure_white" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:id="@id/fl_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/loading_s" />
+                    <ViewStub android:layout_gravity="center" android:id="@id/vs_error" android:layout="@layout/error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/personal_header_margin_top">
+                    <TextView android:gravity="center_vertical" android:id="@id/tv_subscribe_header" android:background="@drawable/main_border_bottom_selector" android:padding="10.0dip" android:paddingLeft="@dimen/activity_padding_left" android:paddingTop="@dimen/main_row_padding_top" android:paddingRight="@dimen/activity_padding_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:text="@string/personal_subscription" android:drawablePadding="@dimen/main_title_margin_left" style="@style/TitleHeader" />
+                    <TextView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" style="@style/TitleMore" />
+                </FrameLayout>
+                <View android:background="@color/main_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_subscription" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_login_required" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="@dimen/secondary_text_size" android:textColor="@color/black_333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="72.0dip" android:text="@string/login_required" />
+                <TextView android:textSize="@dimen/secondary_text_size" android:textColor="@color/white_f7f7f7" android:id="@id/btn_login" android:background="@drawable/btn_login_require" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/btn_login" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

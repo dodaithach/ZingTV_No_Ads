@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyDialogContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_title_text_size" android:textStyle="bold" android:textColor="@color/green" android:gravity="center" android:id="@id/title" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_title_height" android:text="@string/alert" />
+    <View android:background="@color/green" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:textColor="@color/dialog_text" android:gravity="center|left|top" android:layout_gravity="center" android:id="@id/tv_content" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:minHeight="50.0dip" android:text="@string/alert_singup_zplus" />
+    <View android:background="@color/list_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_size">
+        <Button android:textSize="@dimen/dialog_button_text_size" android:textColor="@color/dialog_text" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_guide" android:background="@drawable/btn_dlg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/guide" android:layout_weight="1.0" />
+        <View android:background="@color/list_separator" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialog_vertical_divider_margin" android:layout_marginBottom="@dimen/dialog_vertical_divider_margin" />
+        <Button android:textSize="@dimen/dialog_button_text_size" android:textColor="@color/dialog_text" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_signup" android:background="@drawable/btn_dlg_selector" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/signup" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/fragment_container" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cast_mini_controller">
+        <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/toolbar_withmode" />
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <fragment android:id="@id/cast_mini_controller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:castShowImageThumbnail="true" class="com.vng.zingtv.fragment.ZTVMiniControllerFragment" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

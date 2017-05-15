@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/toolbar_withmode" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cast_mini_controller" android:layout_below="@id/app_bar">
+        <FrameLayout android:id="@id/fragment_container" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <View android:id="@id/separator0" android:background="@color/main_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_footer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:gravity="center_vertical" android:id="@id/tv_seriesName" android:background="@drawable/selector" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" style="@style/ZingTV.Widget.SecondaryText" />
+            <View android:id="@id/separator1" android:background="@color/main_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:gravity="center" android:id="@id/tv_viewMore" android:background="@drawable/selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/text_view_more" android:maxLines="1" android:layout_weight="0.4" style="@style/ZingTV.Widget.SecondaryText" />
+        </LinearLayout>
+    </LinearLayout>
+    <fragment android:id="@id/cast_mini_controller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:castShowImageThumbnail="true" class="com.vng.zingtv.fragment.ZTVMiniControllerFragment" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/media_route_menu_item" android:title="@string/media_route_menu_title" app:showAsAction="always" app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider" />
+    <item android:id="@id/action_clear_queue" android:title="@string/x_a_danh_s_ch" app:showAsAction="never" />
+    <item android:id="@id/action_settings" android:title="@string/t_y_ch_nh" app:showAsAction="never" />
+</menu>

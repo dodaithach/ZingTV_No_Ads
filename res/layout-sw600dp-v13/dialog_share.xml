@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg" android:layout_width="@dimen/dialog_min_width" android:layout_height="wrap_content" style="@style/MyDialogContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dialog_title_height">
+        <TextView android:textSize="@dimen/primary_text_size" android:textStyle="bold" android:textColor="@color/black_333333" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/dialog_title_height" android:text="@string/share" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ln_rating" android:background="@drawable/list_selector_holo_dark" android:paddingLeft="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dialog_title_text_size" android:textStyle="bold" android:textColor="@color/green" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_rate" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/gray_dfdfdf" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <GridView android:scrollbarThumbVertical="@drawable/scrollbar" android:scrollbarStyle="outsideOverlay" android:gravity="center_horizontal" android:id="@id/grdShare" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/selector" android:numColumns="2" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/gray_dfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close" style="@style/ZingTV.Widget.SecondaryText" />
+</LinearLayout>

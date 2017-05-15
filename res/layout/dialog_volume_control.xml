@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@color/black" android:padding="@dimen/dialog_volume_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/seekbar_volume" android:layout_width="200.0dip" android:layout_height="wrap_content" style="@style/SeekBarStyle2" />
+</LinearLayout>

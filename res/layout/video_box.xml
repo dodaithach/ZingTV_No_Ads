@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/gap" android:background="@color/act_background" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <FrameLayout android:id="@id/llViewMore" android:background="@drawable/selector" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="70.0dip" style="@style/TitleHeader" />
+        <TextView android:layout_gravity="center|right" android:id="@id/imgViewMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" style="@style/TitleMore" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <com.vng.zingtv.views.VideoBoxView android:id="@id/video_box_view_top_left" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="2.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.vng.zingtv.views.VideoBoxView android:id="@id/video_box_view_top_right" android:paddingLeft="2.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <com.vng.zingtv.views.VideoBoxView android:id="@id/video_box_view_bottom_left" android:paddingLeft="4.0dip" android:paddingRight="2.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.vng.zingtv.views.VideoBoxView android:id="@id/video_box_view_bottom_right" android:paddingLeft="2.0dip" android:paddingRight="4.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

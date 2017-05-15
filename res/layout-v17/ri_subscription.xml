@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/selector" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_new_video_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZingTV.Widget.GreenOval" />
+    <TextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_title_margin_left" android:layout_marginRight="@dimen/activity_padding_left" android:text="@string/category_tvshow" android:maxLines="1" android:layout_toLeftOf="@id/tv_new_video_num" android:layout_toRightOf="@id/img_thumbnail" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/ZingTV.Widget.ThirdText" />
+    <com.vng.zingtv.views.ZImageView android:id="@id/img_thumbnail" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

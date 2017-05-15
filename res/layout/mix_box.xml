@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/gap" android:background="@color/act_background" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <FrameLayout android:id="@id/llViewMore" android:background="@drawable/selector" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="70.0dip" style="@style/TitleHeader" />
+        <TextView android:layout_gravity="center|right" android:id="@id/imgViewMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" style="@style/TitleMore" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_main" android:background="@drawable/selector" android:paddingLeft="4.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="320.0dip">
+            <ImageView android:id="@id/img_thumnail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_thumb_shape" android:scaleType="centerCrop" />
+            <RelativeLayout android:id="@id/rl_prog_info" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/img_thumnail">
+                <TextView android:textColor="@color/black_333333" android:ellipsize="end" android:id="@id/tv_title_program" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="Mị Nguyệt Truyện" android:maxLines="2" style="@style/ZingTV.Widget.TitleText" />
+                <TextView android:textSize="@dimen/description_text_size" android:textColor="@color/black_333333" android:ellipsize="end" android:id="@id/tv_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/dummy_prog_description" android:maxLines="3" android:layout_below="@id/tv_title_program" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/left_panel" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/rl_main">
+            <com.vng.zingtv.views.VideoBoxView android:id="@id/rl_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+            <com.vng.zingtv.views.VideoBoxView android:id="@id/rl_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_below="@id/left_panel">
+            <com.vng.zingtv.views.VideoBoxView android:id="@id/rl_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="0.5" />
+            <com.vng.zingtv.views.VideoBoxView android:id="@id/rl_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_weight="0.5" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

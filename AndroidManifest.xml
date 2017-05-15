@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.zing.tv3" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <permission android:name="com.zing.tv3.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.zing.tv3.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="true"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.vng.zingtv.ZingTvApplication" android:supportsRtl="true" android:theme="@style/ZingTV.Theme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_id"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.vng.zingtv.provider.CastOptionsProvider"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="d47a34a36212d686093d77bef7ac57cb97c263d8"/>
+        <meta-data android:name="appID" android:value="@string/zalo_sdk_app_id"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.vng.zingtv.activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.SearchResultActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.SearchProgramMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.CategoryDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.PlayerCompactActivity" android:screenOrientation="portrait" android:theme="@style/ZingTV.Theme.Light.DarkActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.PlayerActivity" android:screenOrientation="portrait" android:theme="@style/ZingTV.Theme.Light.DarkActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.ChromeCastPlayerActivity" android:screenOrientation="portrait" android:theme="@style/ZingTV.Theme.Light.DarkActionBar"/>
+        <activity android:name="com.vng.zingtv.activity.DeepLinkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.zing.tv.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="tv.zing.vn"/>
+                <data android:host="m.tv.zing.vn"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:pathPrefix="/video/"/>
+                <data android:pathPrefix="/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.vng.zingtv.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="tv.zing.vn"/>
+                <data android:host="m.tv.zing.vn"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:pathPrefix="/video/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="tv.zing.vn"/>
+                <data android:host="m.tv.zing.vn"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:pathPrefix="/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="zingtv"/>
+                <data android:host="program"/>
+                <data android:host="video"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.StreamingActivity" android:screenOrientation="sensorLandscape" android:theme="@style/ZingTV.Theme.Light.DarkActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.SeriesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.ProgramDetailActivity" android:screenOrientation="portrait" android:theme="@style/CollapseToolbar.ZingTV.Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.ProgramInfoActivity" android:screenOrientation="portrait" android:theme="@style/CollapseToolbar.ZingTV.Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.CommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.SimpleActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.WebViewActivity" android:theme="@style/ZingTV.Theme.WebView"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.ChartActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.ArtistDetailActivity" android:screenOrientation="portrait" android:theme="@style/CollapseToolbar.ZingTV.Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vng.zingtv.activity.ArtistInfoActivity" android:screenOrientation="portrait" android:theme="@style/CollapseToolbar.ZingTV.Theme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="@string/queue_list" android:name="com.queue.ui.QueueListViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.zing.zalo.zalosdk.oauth.WebLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="oauthcode" android:scheme="zalo-1396017800851131651"/> //ex: zalo-745241231456432
+</intent-filter>
+        </activity>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider523132271032907" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <receiver android:exported="true" android:name="com.vng.zingtv.ZaloReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/action_settings" android:name="com.google.sample.cast.refplayer.settings.CastPreference" android:theme="@style/Theme.AppCompat"/>
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <meta-data android:name="configCrashTracking" android:value="false"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.zing.tv3"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.zing.tv3.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+    </application>
+</manifest>

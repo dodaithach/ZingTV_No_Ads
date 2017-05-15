@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="20.0dip" android:text="@string/login_success" style="@style/ZingTV.Widget.PrimaryText" />
+    <TextView android:gravity="center" android:id="@id/tv_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/selec_old_account_to_synchronize_view_history_subcribe_program_vip_info" android:layout_below="@id/tv_header" style="@style/ZingTV.Widget.LoginText" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_below="@id/tv_second" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/img_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="User" style="@style/ZingTV.Widget.LoginText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_second" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/img_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="User" style="@style/ZingTV.Widget.LoginText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_below="@id/tv_second" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/img_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="User" style="@style/ZingTV.Widget.LoginText" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/synchronize_with_another_accont" android:layout_above="@id/tv_footer" style="@style/ZingTV.Widget.LoginText" />
+    <TextView android:gravity="center" android:id="@id/tv_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/every_account_only_synchronize_once" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ZingTV.Widget.LoginText" />
+</RelativeLayout>

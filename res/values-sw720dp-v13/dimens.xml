@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cast_dialog_height">228.0dip</dimen>
+    <dimen name="cast_dialog_width">400.0dip</dimen>
+    <dimen name="dialog_min_width">400.0dip</dimen>
+    <dimen name="h1_size">16.0sp</dimen>
+    <dimen name="img_program_height">114.0dip</dimen>
+    <dimen name="img_program_suggest_height">75.0dip</dimen>
+    <dimen name="img_program_suggest_width">75.0dip</dimen>
+    <dimen name="img_program_width">114.0dip</dimen>
+    <dimen name="img_video_height">114.0dip</dimen>
+    <dimen name="img_video_suggest_height">75.0dip</dimen>
+    <dimen name="img_video_suggest_width">131.0dip</dimen>
+    <dimen name="img_video_width">194.0dip</dimen>
+    <dimen name="list_margin">5.0dip</dimen>
+    <dimen name="menu_size">300.0dip</dimen>
+    <item type="dimen" name="mr_dialog_fixed_width_major">50.0%</item>
+    <item type="dimen" name="mr_dialog_fixed_width_minor">69.99999%</item>
+    <dimen name="normal_text_size">14.0sp</dimen>
+    <dimen name="small_text_size">12.0sp</dimen>
+    <dimen name="title_size">18.0sp</dimen>
+    <dimen name="img_video_height_on_tab">98.0dip</dimen>
+    <dimen name="img_video_width_on_tab">170.0dip</dimen>
+    <dimen name="img_zplus_video_height_on_tab">20.5dip</dimen>
+    <dimen name="img_zplus_video_width_on_tab">20.5dip</dimen>
+</resources>

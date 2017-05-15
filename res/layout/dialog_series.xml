@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bo oi minh di dau the" style="@style/ZingTV.Widget.PrimaryText" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="170.0dip" android:listSelector="@drawable/selector" android:divider="@color/main_divider" android:dividerHeight="1.0dip" />
+    <View android:background="@color/main_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close" style="@style/ZingTV.Widget.SecondaryText" />
+</LinearLayout>

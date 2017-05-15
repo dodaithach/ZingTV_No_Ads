@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/flBackground" android:background="#40000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/pop_up_element" android:background="@drawable/rouded_corners_window_pop_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="25.0dip">
+        <TextView android:textSize="@dimen/secondary_text_size" android:id="@id/copyurl" android:background="@drawable/selector" android:padding="@dimen/padding_window_popup" android:focusable="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/copy_url" />
+        <View android:background="@color/chart_free" android:layout_width="wrap_content" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/margin_view_window_popup" android:layout_marginRight="@dimen/margin_view_window_popup" />
+        <TextView android:textSize="@dimen/secondary_text_size" android:id="@id/openbybrowser" android:background="@drawable/selector" android:padding="@dimen/padding_window_popup" android:focusable="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/open_by_browser" />
+        <View android:background="@color/chart_free" android:layout_width="wrap_content" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/margin_view_window_popup" android:layout_marginRight="@dimen/margin_view_window_popup" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageButton android:layout_gravity="center" android:id="@id/btnback" android:background="@color/transparent" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/selector" android:src="@drawable/ic_chevron_left_black_24dp" android:layout_weight="1.0" />
+            <View android:background="#ffd3d9df" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <ImageButton android:id="@id/btnrefresh" android:background="@color/transparent" android:padding="@dimen/padding_window_popup" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/selector" android:src="@drawable/ic_refresh_black_24dp" android:layout_weight="1.0" />
+            <View android:background="#ffd3d9df" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <ImageButton android:layout_gravity="center" android:id="@id/btnforword" android:background="@color/transparent" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/selector" android:src="@drawable/ic_chevron_right_black_24dp" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

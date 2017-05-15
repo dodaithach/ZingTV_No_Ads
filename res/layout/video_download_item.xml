@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/selector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_root" android:background="@color/main_item_bg" android:paddingLeft="@dimen/card_padding" android:paddingRight="@dimen/card_padding" android:paddingBottom="@dimen/card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/separator" android:background="@color/main_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignLeft="@id/tv_title" />
+        <ImageView android:id="@id/img_thumbnail" android:layout_width="@dimen/img_video_width" android:layout_height="@dimen/img_video_height" android:layout_marginTop="@dimen/card_padding" android:src="@drawable/default_thumb_shape" android:scaleType="centerCrop" android:layout_below="@id/separator" />
+        <TextView android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="A Dog of Flanders" android:maxLines="2" android:layout_toRightOf="@id/img_thumbnail" android:layout_alignTop="@id/img_thumbnail" style="@style/ZingTV.Widget.TitleText" />
+    </RelativeLayout>
+</FrameLayout>

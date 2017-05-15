@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="drawer_menu_width">280.0dip</dimen>
+    <dimen name="psts_text_size">14.0sp</dimen>
+    <dimen name="sub_text_size">13.5sp</dimen>
+    <dimen name="sub_top_text_size">12.0sp</dimen>
+</resources>

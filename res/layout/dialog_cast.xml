@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyDialogContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_layout" />
+    <ViewStub android:id="@id/vs_error" android:layout="@layout/error_simple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/img_thumbnail" android:background="@drawable/default_video" android:visibility="invisible" android:layout_width="@dimen/cast_dialog_width" android:layout_height="@dimen/cast_dialog_height" android:scaleType="centerCrop" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_title" android:background="@drawable/home_text_bg_gradient" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="@dimen/cast_dialog_width" android:layout_height="wrap_content" android:singleLine="false" android:layout_alignBottom="@id/img_thumbnail" />
+    <View android:id="@id/separator" android:background="@color/green" android:visibility="invisible" android:layout_width="@dimen/cast_dialog_width" android:layout_height="1.0dip" android:layout_below="@id/img_thumbnail" />
+    <RelativeLayout android:id="@id/rl" android:layout_width="@dimen/cast_dialog_width" android:layout_height="wrap_content" android:layout_below="@id/separator">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_s" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ln" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <Button android:textSize="@dimen/dialog_button_text_size" android:textColor="@color/dialog_text" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_play" android:background="@drawable/btn_dlg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/play" android:layout_weight="1.0" />
+            <View android:background="@color/list_separator" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialog_vertical_divider_margin" android:layout_marginBottom="@dimen/dialog_vertical_divider_margin" />
+            <Button android:textSize="@dimen/dialog_button_text_size" android:textColor="@color/dialog_text" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_add" android:background="@drawable/btn_dlg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/add" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

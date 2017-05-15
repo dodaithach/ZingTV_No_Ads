@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/chart_full" android:background="@color/chart_free" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginBottom="5.0dip">
+        <View android:id="@id/chart_download" android:background="@color/chart_download" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="0.0dip" />
+        <View android:id="@id/chart_others" android:background="@color/chart_other" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="0.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/chart_full">
+        <ImageView android:id="@id/img_dl" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@color/chart_download" android:scaleType="fitXY" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black_333333" android:id="@id/tv_storage_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/chart_full" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/img_free" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="7.0dip" android:src="@color/chart_free" android:scaleType="fitXY" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black_333333" android:id="@id/tv_storage_free" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

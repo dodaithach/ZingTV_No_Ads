@@ -1629,6 +1629,13 @@
     .locals 6
 
     .prologue
+
+    # show LOG
+    const-string v0, "mylog"
+    const-string v1, "z()"
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    # end LOG
+
     const/4 v4, 0x1
 
     const/4 v2, 0x4
@@ -1987,6 +1994,13 @@
 
     .prologue
     .line 1389
+
+    # show LOG
+    const-string v0, "mylog"
+    const-string v1, "a(I)"
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    # end LOG
+
     invoke-virtual {p0, p1}, Lcom/vng/zingtv/activity/PlayerCompactActivity;->d(I)V
 
     .line 1390
@@ -2029,6 +2043,13 @@
     .locals 9
 
     .prologue
+
+    # show LOG
+    const-string v0, "mylog"
+    const-string v1, "a(Ldjj,Ldjk)"
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    # end LOG
+
     const/4 v2, 0x0
 
     const/4 v8, 0x2
@@ -3702,6 +3723,13 @@
     .locals 6
 
     .prologue
+
+    # show LOG
+    const-string v0, "mylog"
+    const-string v1, "a(S)"
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    # end LOG
+
     const/4 v5, 0x1
 
     const/4 v4, 0x4
@@ -7316,7 +7344,7 @@
     
     # show toast
     const-string v1, "COMPACT"
-    const/4 v2, 0x1
+    const/4 v2, 0x0
     invoke-static {p0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
     move-result-object v1
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V

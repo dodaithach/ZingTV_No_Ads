@@ -78,8 +78,6 @@
 
     move-result v0
 
-    if-nez v0, :cond_1
-
     .line 1660
     iget-object v0, p0, Lcom/vng/zingtv/activity/PlayerCompactActivity$8;->a:Lcom/vng/zingtv/activity/PlayerCompactActivity;
 
